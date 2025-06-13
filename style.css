@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+#navbar {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 50px;
+  width: 400px;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  font-size: small;
+  text-decoration: none;
+}
+
+#telaInicial {
+  display: flex;
+  background-image: url("./assets/images/fundo1.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#telaInicial .camada {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* camada escura */
+  z-index: 0;
+}
+
+#textos1 {
+  margin-top: 25vh;
+  margin-left: 8vw;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+  z-index: 1;
+}
+
+#telaInicial p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: larger;
+}
+
+#flor{
+  position: absolute;
+  left: 30vw;
+  top: 15vh;
+  height: 70%;
+}
