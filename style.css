@@ -44,7 +44,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* camada escura */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* camada escura */
   z-index: 0;
 }
 
@@ -64,9 +65,32 @@
   font-size: larger;
 }
 
-#flor{
+#flor {
   position: absolute;
-  left: 30vw;
+  left: 35vw;
   top: 15vh;
   height: 70%;
+}
+
+#segundaParte {
+  display: flex;
+  background-image: url("./assets/images/fundo2.png");
+  height: 100vh;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-y: -250px;
+}
+
+#segundaParte .camada {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+#githubIcon {
+  position: absolute;
+  z-index: 1;
+  height: 60px;
 }
