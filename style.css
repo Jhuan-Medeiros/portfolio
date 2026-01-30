@@ -73,6 +73,7 @@
 }
 
 #segundaParte {
+  position: relative;
   display: flex;
   background-image: url("./assets/images/fundo2.png");
   height: 100vh;
@@ -93,4 +94,12 @@
   position: absolute;
   z-index: 1;
   height: 60px;
+  right: 3%;
+  top: 90%;
 }
+
+#githubIcon:hover {
+  height: 65px;
+}
+
+#githubIcon ::view-transition
