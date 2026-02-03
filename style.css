@@ -65,10 +65,17 @@
   font-size: larger;
 }
 
+#florBox {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 #flor {
   position: absolute;
-  left: 35vw;
-  top: 15vh;
   height: 70%;
 }
 
@@ -96,10 +103,9 @@
   height: 60px;
   right: 3%;
   top: 90%;
+  transition: transform 0.5s;
 }
 
 #githubIcon:hover {
-  height: 65px;
+  transform: scale(1.1);
 }
-
-#githubIcon ::view-transition
