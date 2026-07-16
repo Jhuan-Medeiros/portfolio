@@ -5,6 +5,10 @@
   font-family: "Inconsolata", monospace;
 }
 
+.fullScreen {
+  min-height: 100vh;
+}
+
 #navbar {
   position: fixed;
   top: 5%;
@@ -16,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
 }
 
 #navbar a {
@@ -25,31 +28,42 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border: solid black 1px;
   font-size: small;
   text-decoration: none;
+}
+
+
+.sobreposicao {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.pagesIcon {
+  position: absolute;
+  z-index: 1;
+  height: 60px;
+  right: 3%;
+  top: 90%;
+  transition: transform 0.5s;
+}
+
+.pagesIcon:hover {
+  transform: scale(1.1);
 }
 
 #telaInicial {
   display: flex;
   background-image: url("./assets/images/fundo1.png");
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#telaInicial .camada {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* camada escura */
-  z-index: 0;
-}
 
-#textos1 {
+#leftPrincipalText {
   margin-top: 25vh;
   margin-left: 8vw;
   width: 25%;
@@ -79,37 +93,39 @@
   height: 70%;
 }
 
-#segundaParte{
-  position: relative;
+#container{
+  display: flex;
 }
 
-#terceiraParte {
+.expansivo {
   position: relative;
   display: flex;
-  background-image: url("./assets/images/fundo3Divido.png");
-  height: 100vh;
+  flex-grow: 1;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position-y: -250px;
 }
 
-#terceiraParte .camada {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+#container .expansivo:hover{
+  max-width: 100%;
 }
 
-#githubIcon {
-  position: absolute;
-  z-index: 1;
-  height: 60px;
-  right: 3%;
-  top: 90%;
-  transition: transform 0.5s;
+.expansivo .painelExpansivo:hover{
+  
+}
+.primeiraParte {
+  background-image: url("./assets/images/fundo1Divido.png");
+  background-size: cover;
+  background-position: center; 
 }
 
-#githubIcon:hover {
-  transform: scale(1.1);
+.segundaParte {
+  background-image: url("./assets/images/fundo2Divido.png");
+  background-size: cover;
+  background-position: center
 }
+
+.terceiraParte {
+  background-image: url("./assets/images/fundo3Divido.png");
+  background-position: center -250px;
+}
+
