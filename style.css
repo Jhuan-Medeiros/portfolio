@@ -79,17 +79,21 @@
   height: 70%;
 }
 
-#segundaParte {
+#segundaParte{
+  position: relative;
+}
+
+#terceiraParte {
   position: relative;
   display: flex;
-  background-image: url("./assets/images/fundo2.png");
+  background-image: url("./assets/images/fundo3Divido.png");
   height: 100vh;
   background-size: auto;
   background-repeat: no-repeat;
   background-position-y: -250px;
 }
 
-#segundaParte .camada {
+#terceiraParte .camada {
   position: absolute;
   height: 100%;
   width: 100%;
