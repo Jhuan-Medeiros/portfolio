@@ -103,15 +103,13 @@
   flex-grow: 1;
   background-size: auto;
   background-repeat: no-repeat;
+  transition: flex 1s ease;
 }
 
 #container .expansivo:hover{
-  max-width: 100%;
+  flex: 1.2;
 }
 
-.expansivo .painelExpansivo:hover{
-  
-}
 .primeiraParte {
   background-image: url("./assets/images/fundo1Divido.png");
   background-size: cover;
