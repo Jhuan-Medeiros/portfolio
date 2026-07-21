@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
+  
+}
+
+body::-webkit-scrollbar-track{
+  background-color: black;
 }
 
 .fullScreen {
@@ -32,7 +37,6 @@
   font-size: small;
   text-decoration: none;
 }
-
 
 .sobreposicao {
   position: absolute;
@@ -93,7 +97,7 @@
   height: 70%;
 }
 
-#container{
+#container {
   display: flex;
 }
 
@@ -106,14 +110,29 @@
   transition: flex 1s ease;
 }
 
-#container .expansivo:hover{
-  flex: 1.2;
+/* #container .expansivo:hover{
+    flex: 1.2;
+  } */
+
+.painelDiminuido {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painelDiminuido p {
+  color: #ffffff;
+  font-size: 27px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px;
+  font-weight: 300;
 }
 
 .primeiraParte {
   background-image: url("./assets/images/fundo1Divido.png");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .segundaParte {
@@ -126,4 +145,3 @@
   background-image: url("./assets/images/fundo3Divido.png");
   background-position: center -250px;
 }
-
