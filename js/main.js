@@ -1,10 +1,15 @@
 function expandirAba(aba){
     if(this.classList.contains("primeiraParte")){
-        console.log("Aba 1")
+        const area = this.getBoundingClientRect();
+        console.log(area)
+        console.log(window.innerHeight)
+        console.log(window.innerWidth)
+        console.log(area.width - window.innerWidth)
+        
     } else if (this.classList.contains("segundaParte")){
-        console.log("Aba 2")
+        console.log(this)
     } else if (this.classList.contains("terceiraParte")){
-        console.log("Aba 3")
+        console.log(this)
     }
 }
 
